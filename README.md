@@ -17,7 +17,7 @@ Projetos e desafios realizados no Stage 3 do Programa Explorer da Rocketseat.
 <br>
 
 <p align="center">
-  <img alt="Desafio Mobile First" src="./images/preview.jpg" width="30%">
+  <img alt="Desafio Mobile First" src="./images/preview.jpg" width="25%">
 </p>
 
 ## 🚀 Tecnologias
