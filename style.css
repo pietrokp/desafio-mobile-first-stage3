@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: #EFF1FF;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 320px;
+    background: #8E9AAF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.page {
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.page::before {
+    content: '';
+    width: 100%;
+    height: 50px;
+    background: #CBC0D3;
+    position: absolute;
+    top: 230px;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    margin: 32px auto 40px;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.6));
+    animation: appear-logo 3s;
+}
+
+header h1 {
+    font-family: 'Staatliches';
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 70px;
+
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+
+    animation: appear-title 3s;
+}
+
+header p {
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #23053A;
+    text-align: center;
+}
+
+.card1,
+.card2 {
+    position: relative;
+    margin: 60px auto 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    color: #4A4E69;
+
+}   
+
+.card1 img,
+.card2 img {
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+
+    opacity: 0.9;
+}
+
+.card1 img {
+    height: 25rem;
+}
+
+.card2 img {
+    height: 45rem;
+}
+
+.card1 h2,
+.card2 h2 {
+    position: absolute;
+    top: 20px;
+    left: 245px;
+
+    width: 12.0rem;
+    height: 3.5rem;
+
+    background: #FEEAFA;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.footer p {
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #4A4E69;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.footer a {
+    color: #d174cc;
+    text-decoration: none;
+} 
+
+.footer a:hover {
+    color: #863b7a;
+    font-style: bold;
+}
+
+.card1:hover,
+.card2:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.card1 img:hover,
+.card2 img:hover {
+    opacity: 1;
+}
+
+@keyframes appear-logo {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear-title {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
