@@ -1,8 +1,6 @@
 <h1 align="center"> Desafio Mobile First - Explorer Stage 3 </h1>
 
-<p align="center">
-Projetos e desafios realizados no Stage 3 do Programa Explorer da Rocketseat.
-</p>
+
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
